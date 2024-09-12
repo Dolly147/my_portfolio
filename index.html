@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/19a596eb97.js" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+  <section>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="myimages/logo.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <span id="typing-animation"></span>
+
+
+        <script>
+        const typingAnimationElement = document.getElementById('typing-animation');
+        const typingTexts = [
+        'Software Developer  ',
+        'Data Analyst  ',
+        'Front-End Developer   ',
+        ];
+
+        function playTypingAnimation(text) {
+        for (let i = 0; i < text.length; i++) {
+          setTimeout(() => {
+          typingAnimationElement.textContent += text[i];
+          }, i * 100); 
+        }
+        setTimeout(() => {
+          typingAnimationElement.textContent = '';
+          playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+        }, text.length *100);
+        }
+        playTypingAnimation(typingTexts[0]);
+      </script>
+
+        <h1>Hi, I'm <span>Keerthi</span> <br> From India</h1>
+        
+        <div class="contact-left">
+          <p> <i class="fa-solid fa-envelope"></i>
+              keerthiramatenki@gmail.com</p>
+          <p><i class="fa-solid fa-square-phone"></i>      +91-9347547085</p>
+        </div>
+        
+    </div>
+  </div>
+
+
+
+</section>
+  
+  
+
+  <!--------------------------------- About Section ------------------->
+   <section>
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="myimages/user.png" alt="User Image">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I am currently pursuing my B.Tech in my 4th year at NIT Raipur. I am proficient in programming languages such as C, C++, and Python, and I have experience with tech stacks like HTML, CSS, JavaScript, and React.js. I have successfully completed several projects related to web development. In addition to my technical skills, I have taken on leadership roles, serving as the Secretary of the ECE Department and the Head Coordinator of the Robotics Club at NIT Raipur.</p>
+          
+          <div class="tab-title">
+            <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+            <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+            <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Software Developer</span> <br>Design, develop, and maintain software systems</li>
+              <li><span>Web Development</span> <br>Web app Development</li>
+              <li><span>Data Analysis</span> <br>Analyze data to inform decisions</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Software Developer Intern</span> <br>Worked on XYZ projects and improved development process efficiency.</li>
+              <li><span>Web Developer Intern</span> <br>Built and maintained client-facing web applications.</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2021-2025</span> <br>B.Tech from NIT Raipur</li>
+              <li><span>2019-2021</span> <br>Intermediate - MPC</li>
+              <li><span>2014-2019</span> <br>5th to 10th grade</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-------------------------------------------------------------------------------SKILLLS---------------------------->
+
+<div id="skills" class="skills">
+  <div class="main-text">
+    <h2>My Skills</h2>
+  </div>
+
+  <div class="skill-main">
+    <!-- Left: Technical Skills -->
+    <div class="skill-left">
+      <h3>Technical Skills</h3>
+
+      <div class="skill-bar">
+        <div class="info">
+          <p>HTML</p>
+          <p>85%</p>
+        </div>
+        <div class="bar">
+          <span class="html"></span>
+        </div>
+      </div>
+
+      <div class="skill-bar">
+        <div class="info">
+          <p>CSS</p>
+          <p>80%</p>
+        </div>
+        <div class="bar">
+          <span class="css"></span>
+        </div>
+      </div>
+
+      <div class="skill-bar">
+        <div class="info">
+          <p>JavaScript</p>
+          <p>75%</p>
+        </div>
+        <div class="bar">
+          <span class="javascript"></span>
+        </div>
+      </div>
+
+      <div class="skill-bar">
+        <div class="info">
+          <p>Reactjs</p>
+          <p>70%</p>
+        </div>
+        <div class="bar">
+          <span class="reactjs"></span>
+        </div>
+      </div>
+
+      <div class="skill-bar">
+        <div class="info">
+          <p>C & C++</p>
+          <p>100%</p>
+        </div>
+        <div class="bar">
+          <span class="c"></span>
+        </div>
+      </div>
+
+      <div class="skill-bar">
+        <div class="info">
+          <p>Python</p>
+          <p>70%</p>
+        </div>
+        <div class="bar">
+          <span class="python"></span>
+        </div>
+      </div>
+
+      <div class="skill-bar">
+        <div class="info">
+          <p>Nodejs</p>
+          <p>60%</p>
+        </div>
+        <div class="bar">
+          <span class="nodejs"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Professional Skills -->
+    <div class="skill-right">
+      <h3 class="professional-text">Professional Skills</h3>
+      <div class="professional">
+        <div class="box">
+          <div class="circle"></div>
+          <div class="text">
+            <small>Team Work</small>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="circle"></div>
+          <div class="text">
+            <small>Event Management</small>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="circle"></div>
+          <div class="text">
+            <small>Innovative &<br>Creative</small>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="circle"></div>
+          <div class="text">
+            <small>Leadership</small>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="circle"></div>
+          <div class="text">
+            <small>Adaptive</small>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="circle"></div>
+          <div class="text">
+            <small>Time Management</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="other-skills">
+  <h3 class="other-text">Other Skills</h3>
+  <div class="grid-container">
+      <div class="grid-item">DBMS</div>
+      <div class="grid-item">Operating Systems</div>
+      <div class="grid-item">OOPs</div>
+      <div class="grid-item">MySQL</div>
+      <div class="grid-item">Power BI</div>
+      <div class="grid-item">MS Excel</div>
+      <div class="grid-item">Computer Networks</div>
+      <div class="grid-item">Github</div>
+  </div>
+</div>
+
+  <!----------------------------------------------Services----------------->
+<section>
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Software Developer</h2>
+          <p>Web design is the process of creating visually appealing and user-friendly websites that enhance user experience through layout, colors, fonts, and interactive elements.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop"></i>
+          <h2>Web Design</h2>
+          <p>Web design focuses on creating visually appealing and user-friendly interfaces for websites, while web development involves the technical implementation of these designs, including coding and functionality.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-database"></i>
+          <h2>Data Analysis</h2>
+          <p>Data analysis involves inspecting, cleaning, and modeling data to uncover useful information, draw conclusions, and support decision-making.
+          </p>
+          <a href="#">Learn more</a>
+        </div>    
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+  <!-------------------------------portfolio------------------>
+  <section>
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Projects</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="myimages/work-1.png">
+        <div class="layer">
+          <h3>Ecommerce website</h3>
+          <p>• Developed a responsive e-commerce website with expertise in designing key pages, integrating interactive elements, and applying e-commerce principles.  <br> • Technologies: HTML, CSS, JavaScript, Bootstrap  <br> • Developed and designed the home page, shop page, single product page, blog page, and shopping cart.</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <img src="myimages/work-2.png">
+        <div class="layer">
+          <h3>Gemini clone</h3>
+          <p>• React-based web application replicating the Google Gemini AI chatbot. <br> • Technologies Used: React, CSS, Google Gemini API  <br> • Chat Interface, Google Gemini Integration, React Development.</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <img src="myimages/work-3.png">
+        <div class="layer">
+          <h3>Hospital Management system</h3>
+          <p>• Developed a console-based Hospital Management System with features for managing patient records, doctor information, and appointment scheduling. <br> • Technologies: C++, Object-Oriented Programming (OOP), File Handling <br>• Tools: Visual Studio Code, g++</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <img src="myimages/work-1.png">
+        <div class="layer">
+          <h3>Pizza Sales Analysis Project</h3>
+          <p>• Analyzed pizza sales data using MySQL. <br>  • Extracted and queried data to identify sales patterns and trends.  <br> • Provided actionable insights that optimized inventory management and marketing strategies.</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <img src="myimages/work-2.png">
+        <div class="layer">
+          <h3>Employee Performance Dashboard</h3>
+          <p>• Created a Power BI dashboard to analyze employee performance and retention metrics. <br> • Visualized trends and identified areas for improvement. <br> • Delivered insights that enhanced employee engagement and retention strategies.</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <img src="myimages/work-3.png">
+        <div class="layer">
+          <h3>Diwali Sale Analysis</h3>
+          <p>• Improved sales and revenue through customer review analysis. <br> • Analyzed customer reviews and ratings using Python, NumPy, and Pandas. <br>• Performed sentiment analysis to identify key factors influencing sales. Developed recommendations to enhance sales strategies.</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <a href="#" class="btn"> See more</a>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+<!----------------------------------------Contact-->
+<section>
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p> <i class="fa-solid fa-envelope"></i>
+           keerthiramatenki@gmail.com</p>
+        <p><i class="fa-solid fa-square-phone"></i>  +91-9347547085</p>
+
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/keerthi-ramatenki-608649229/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://x.com/Keerthi59014?t=7z-owgdocBg1iKXYEs4o0Q&s=09"><i class="fa-brands fa-twitter"></i></i></a>
+          <a href="https://www.instagram.com/?hl=en"><i class="fa-brands fa-instagram"></i></a>       
+          <a href="https://www.facebook.com/profile.php?id=100078249916934&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <a href="myimages/Ramatenki_Keerthi_sde.pdf" download class="btn btn-2">Download Resume</a>
+      </div>
+
+      <div class="contact-right">
+
+        <form name="submit-to-google-sheet" id="contact-form">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn-2">Submit</button>
+        </form>
+        
+        <span id="msg"></span>
+
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Thank you  <i class="fa-solid fa-heart"></i></p>
+  </div>
+</div>
+</section>
+
+
+
+
+
+
+
+  <!-- JavaScript -->
+  <script>
+    function opentab(event, tabname){
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      
+      for (var tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (var tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+  <script>
+    var sidemenu=document.getElementById("sidemenu");
+
+    function openmenu(){
+      sidemenu.style.right ="0";
+    }
+    function closemenu(){
+      sidemenu.style.right ="-200px";
+    }
+
+  </script>
+
+
+
+
+<script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxuLgAFB_rG9GOHk9hpXx7LGDxLxxRt-AqAw3kZ9WWM724gqJpbBdkQOxTI3vWHUMfzSg/exec';  
+        const form = document.getElementById('contact-form');
+        const msg = document.getElementById('msg');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = 'Message sent successfully!';
+                    setTimeout(() => {
+                        msg.innerHTML = '';
+                    }, 5000);
+                    form.reset();
+                })
+                .catch(error => {
+                    msg.innerHTML = 'Message failed to send!';
+                    console.error('Error!', error.message);
+                });
+        });
+</script>
+
+</body>
+</html>
